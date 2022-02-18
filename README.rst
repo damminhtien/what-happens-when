@@ -1,56 +1,52 @@
-What happens when...
+Điều gì xảy ra khi...
 ====================
 
-This repository is an attempt to answer the age-old interview question "What
-happens when you type google.com into your browser's address box and press
+Repo này là một nỗ lực để trả lời câu hỏi phỏng vấn lâu đời "Điều gì
+xảy ra khi bạn nhập google.com vào hộp địa chỉ của trình duyệt và nhấn
 enter?"
 
-Except instead of the usual story, we're going to try to answer this question
-in as much detail as possible. No skipping out on anything.
+Thay vì cách trả lời thông thường, chúng tôi sẽ cố gắng trả lời câu hỏi này
+càng chi tiết càng tốt. Không bỏ qua bất cứ điều gì.
 
-This is a collaborative process, so dig in and try to help out! There are tons
-of details missing, just waiting for you to add them! So send us a pull
-request, please!
+Đây là một Repo hợp tác, vì vậy hãy tìm hiểu kỹ và cố gắng giúp đỡ! Có rất nhiều thứ chi tiết chỉ chờ bạn bổ sung! 
+Vì vậy, hãy gửi cho chúng tôi pull requests!
 
-This is all licensed under the terms of the `Creative Commons Zero`_ license.
+Tất cả điều này đều được cấp phép theo các điều khoản của giấy phép **Creative Commons Zero**.
 
-Read this in `简体中文`_ (simplified Chinese), `日本語`_ (Japanese), `한국어`_
-(Korean) and `Spanish`_. NOTE: these have not been reviewed by the alex/what-happens-when
-maintainers.
+Đọc điều này trong `简体 中文` _ (tiếng Trung giản thể), `日本語` _ (tiếng Nhật), `한국어` _
+(Tiếng Hàn) và `Tiếng Tây Ban Nha`_. LƯU Ý: những điều này chưa được xem xét bởi alex / những gì-xảy ra-khi
+người bảo trì
 
-Table of Contents
+Mục lục
 ====================
 
 .. contents::
    :backlinks: none
    :local:
 
-The "g" key is pressed
+Khi nhấn "g" trên bàn phím
 ----------------------
-The following sections explain the physical keyboard actions
-and the OS interrupts. When you press the key "g" the browser receives the
-event and the auto-complete functions kick in.
-Depending on your browser's algorithm and if you are in
-private/incognito mode or not various suggestions will be presented
-to you in the dropdown below the URL bar. Most of these algorithms sort
-and prioritize results based on search history, bookmarks, cookies, and
-popular searches from the internet as a whole. As you are typing
-"google.com" many blocks of code run and the suggestions will be refined
-with each keypress. It may even suggest "google.com" before you finish typing
-it.
+Các phần sau giải thích các thao tác trên bàn phím vật lý
+và hệ điều hành. Khi bạn nhấn phím "g", trình duyệt sẽ nhận được
+sự kiện và các chức năng tự động hoàn thành bắt đầu.
+Tùy thuộc vào thuật toán của trình duyệt của bạn và nếu bạn đang ở
+chế độ riêng tư / ẩn danh hoặc không có nhiều đề xuất khác nhau sẽ được trình bày
+cho bạn trong menu thả xuống bên dưới thanh URL. Hầu hết các thuật toán này sắp xếp
+và ưu tiên các kết quả dựa trên lịch sử tìm kiếm, dấu trang, cookie và
+các tìm kiếm phổ biến từ internet nói chung. Khi bạn đang gõ
+"google.com" nhiều khối mã chạy và các đề xuất sẽ được tinh chỉnh
+với mỗi lần nhấn phím. Nó thậm chí có thể đề xuất "google.com" trước khi bạn nhập xong
+nó.
 
-The "enter" key bottoms out
+Phím "enter" nhấn xuống
 ---------------------------
-
-To pick a zero point, let's choose the Enter key on the keyboard hitting the
-bottom of its range. At this point, an electrical circuit specific to the enter
-key is closed (either directly or capacitively). This allows a small amount of
-current to flow into the logic circuitry of the keyboard, which scans the state
-of each key switch, debounces the electrical noise of the rapid intermittent
-closure of the switch, and converts it to a keycode integer, in this case 13.
-The keyboard controller then encodes the keycode for transport to the computer.
-This is now almost universally over a Universal Serial Bus (USB) or Bluetooth
-connection, but historically has been over PS/2 or ADB connections.
+Để chọn thời điểm 0, hãy chọn khi nhấn xuống phím Enter trên bàn phím.
+Tại thời điểm này, một mạch điện tương ứng được đóng (trực tiếp hoặc điện dung). Điều này cho phép một lượng nhỏ
+dòng điện chạy vào mạch logic của bàn phím, mạch này quét trạng thái
+của mỗi công tắc phím, loại bỏ nhiễu của sự ngắt quãng nhanh chóng
+đóng công tắc và chuyển nó thành một số nguyên mã khóa, trong trường hợp này là 13.
+Sau đó, bộ điều khiển bàn phím sẽ mã hóa mã khóa để chuyển đến máy tính.
+Điều này hiện gần như phổ biến qua USB hoặc Bluetooth, nhưng trong lịch sử đã qua kết nối PS / 2 hoặc ADB.
 
 *In the case of the USB keyboard:*
 
