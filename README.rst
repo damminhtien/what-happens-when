@@ -48,7 +48,7 @@ của mỗi công tắc phím, loại bỏ nhiễu của sự ngắt quãng nhan
 Sau đó, bộ điều khiển bàn phím sẽ mã hóa mã khóa để chuyển đến máy tính.
 Điều này hiện gần như phổ biến qua USB hoặc Bluetooth, nhưng trong lịch sử đã qua kết nối PS / 2 hoặc ADB.
 
-*In the case of the USB keyboard:*
+*Trong trường hợp sử dụng bàn phím USB:*
 
 - The USB circuitry of the keyboard is powered by the 5V supply provided over
   pin 1 from the computer's USB host controller.
@@ -72,7 +72,7 @@ Sau đó, bộ điều khiển bàn phím sẽ mã hóa mã khóa để chuyển
   device driver.  The value of the key is then passed into the operating
   system's hardware abstraction layer.
 
-*In the case of Virtual Keyboard (as in touch screen devices):*
+*Trong trường hợp sử dụng bàn phím ảo (như bàn phím trên điện thoại, máy tính bảng):*
 
 - When the user puts their finger on a modern capacitive touch screen, a
   tiny amount of current gets transferred to the finger. This completes the
